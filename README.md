@@ -1,2 +1,2 @@
 # DCGAN
-mnist cifar-10
+pytorch，mnist，CelebA，python

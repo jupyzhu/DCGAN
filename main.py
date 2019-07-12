@@ -100,7 +100,7 @@ def train(dataset='mnist'):
 
             G_result = G(z)
             D_result = D(G_result).squeeze()
-            G_train_loss = BCE_loss(D_result, y_fake)
+            G_train_loss = BCE_loss(D_result, y_real)
             G_train_loss.backward()
             G_optimizer.step()
 
